@@ -21,6 +21,7 @@ body {
 
 h1, .img {
 	text-align: center; 
+	line-height: normal;
 }
 h1 {
 	font-size: 12px;
@@ -34,7 +35,7 @@ ul {
 }
 
 li {
-	line-height: 10px;	
+	line-height: normal;	
 	list-style-position: inside;
 }
 
