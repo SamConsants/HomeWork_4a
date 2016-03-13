@@ -1,13 +1,15 @@
-body {
-	margin: 0 auto;
-	width: 966px;
-   padding: 20px 30px 20px 50px;	
-   font-family: "Open Sans", Arial sans-serif;
-}
-
 
 /*  HEADER  */
 
+.wrapper {
+   margin: 0 auto;
+   width: 966px;
+   padding: 0 46px; 
+   font-family: "Open Sans", Arial sans-serif;  
+-webkit-box-shadow: 0px 0px 4px 0px rgba(219,219,219,1);
+-moz-box-shadow: 0px 0px 4px 0px rgba(219,219,219,1);
+box-shadow: 0px 0px 4px 0px rgba(219,219,219,1);
+}
 
 .header img{
    margin: 30px;
@@ -15,17 +17,20 @@ body {
 }
 
 .menu {
-   position: relative;
-   overflow:hidden;
-   text-align: center;
-   background: #656363;   
+position: relative;
+overflow:hidden;
+text-align: center;
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#5c5c5c+1,444343+100 */
+background: #5c5c5c; /* Old browsers */
+background: -moz-linear-gradient(top,  #5c5c5c 1%, #444343 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #5c5c5c 1%,#444343 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #5c5c5c 1%,#444343 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ 
 }
 
 .links {
    height: 40px;
    float:left;
-   list-style:none;   
-   text-align: center;   
+   list-style:none;         
 }
 
 .links li {
@@ -45,24 +50,31 @@ body {
    font-size: 15px;
 }
 
-.menu .links :hover {
-   background: #2C2C2C;
+.menu .links :hover {   
    border: 10px #fff;
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4a4a4a+0,2e2e2e+100 */
+background: #4a4a4a; /* Old browsers */
+background: -moz-linear-gradient(top,  #4a4a4a 0%, #2e2e2e 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #4a4a4a 0%,#2e2e2e 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #4a4a4a 0%,#2e2e2e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4a4a4a', endColorstr='#2e2e2e',GradientType=0 ); /* IE6-9 */
+
 }
  
 
 /*  MAIN SECTION  */
 
-.clearfix:after {
-	content:'';
-	clear:both;
-	display:block;
+
+.container {
+   position: relative;
+   overflow: hidden;
+   margin-top: 40px;
 }
 
 .left-menu {
-   width: 25%;
-   margin: 40px 30px 0px 0px;    
-   float: left;    
+   width: 240px;
+   float: left;  
+   border:1px solid #c8c8c8;  
 }
 
 .left-menu ul {
@@ -72,35 +84,42 @@ body {
 
 .left-menu li{
 	list-style-type: none;
-   padding: 8px 50px 8px 30px;
    text-decoration: none;
-   border:1px solid #E1E1E1;
+   border-top: 1px solid #c8c8c8;
    border-collapse: collapse;
+}
+
+.left-menu li:first-child {
+   border: none;
 }
 
 .left-menu a {
    display: block;
-   color:#636363;
+   color:#656363;
+   line-height: 37px;
    text-decoration: none;
+   padding-left: 20px;   
    font-family: 12px;
    text-shadow: 1px;
 }
 
 .left-menu a:hover {
 	color: #000;
-   margin-left: 10px;
+   padding-left: 35px;
+   background: #f9f9f9;
+   transition: 0.2s all;
 }
 
 .content {
-   width: 70%;
-   height: 100%;
-   margin: 40px 0px 0px 0px;
    float:right;
-   border:1px solid #E1E1E1;
+   width: 680px;
+   height: 100%;
+   border:1px solid #c8c8c8;
+   text-align: center;
 }
 
 .content img {
-   margin: 50px 60px;   
+   padding: 50px 0px;   
 }
    
 
@@ -108,9 +127,10 @@ body {
 .frame {
    float:right;
    width: 70%;
-   margin: 30px -20px 50px 30px;
+   margin: 30px -20px 0px 30px;
    font-size: 13px;  
-   line-height: 1.6;
+   line-height: 21px;
+   color:#2c2c2c;
 }
 
 
@@ -118,36 +138,44 @@ body {
 
 .footer {
    position: relative;
-   overflow: hidden;
-   text-align: center;
-   background: #E1E1E1;
+   overflow:hidden;
    clear: both;
    float: left;
    width:100%; 
    height: 40px; 
-   padding: 5px;
-   font-size: 12px; 
+   padding: 40px 0;
+   font-size: 12px;    
 }
 
-.footer .links a{
+.footer-links {
+   position: relative;
+   overflow:hidden;
+   background: #E1E1E1;
+}
+
+.footer-links li {
    float:left;
-   color:#000;
-   text-decoration: none;
-   line-height: 20px;
-   letter-spacing: 0.2px;
-   text-shadow: 0.2px;
-   font-size: 15px;   
+   list-style: none;
+   text-align: center;
+   padding: 15px 0;
 }
 
-.footer .links li a:hover {
+.footer-links a{
+   display: block;
+   float:left;
+   color:#2c2c2c;
+   padding:0 50px;
+   text-decoration: none;
+   line-height: 40px;
+   font-size: 13px;   
+}
+
+.footer-links .copyrights {
+   float: right;
+   padding-right: 26px;
+}
+
+.footer a:hover {
    text-decoration: underline;
 }
-
-
-
-
-
-
-
-
 
