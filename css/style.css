@@ -1,0 +1,153 @@
+body {
+	margin: 0 auto;
+	width: 966px;
+   padding: 20px 30px 20px 50px;	
+   font-family: "Open Sans", Arial sans-serif;
+}
+
+
+/*  HEADER  */
+
+
+.header img{
+   margin: 30px;
+   width: 150px;
+}
+
+.menu {
+   position: relative;
+   overflow:hidden;
+   text-align: center;
+   background: #656363;   
+}
+
+.links {
+   height: 40px;
+   float:left;
+   list-style:none;   
+   text-align: center;   
+}
+
+.links li {
+   float: left;
+   list-style: none;
+   padding: 1px 20px;
+   margin: auto;
+   margin-right: 20px;
+}
+
+.links a {
+   color:#F9F9F9;
+   text-decoration: none;
+   line-height: 40px;
+   letter-spacing: 0.2px;
+   text-shadow: 0.2px;
+   font-size: 15px;
+}
+
+.menu .links :hover {
+   background: #2C2C2C;
+   border: 10px #fff;
+}
+ 
+
+/*  MAIN SECTION  */
+
+.clearfix:after {
+	content:'';
+	clear:both;
+	display:block;
+}
+
+.left-menu {
+   width: 25%;
+   margin: 40px 30px 0px 0px;    
+   float: left;    
+}
+
+.left-menu ul {
+   width: 100%;
+   
+}
+
+.left-menu li{
+	list-style-type: none;
+   padding: 8px 50px 8px 30px;
+   text-decoration: none;
+   border:1px solid #E1E1E1;
+   border-collapse: collapse;
+}
+
+.left-menu a {
+   display: block;
+   color:#636363;
+   text-decoration: none;
+   font-family: 12px;
+   text-shadow: 1px;
+}
+
+.left-menu a:hover {
+	color: #000;
+   margin-left: 10px;
+}
+
+.content {
+   width: 70%;
+   height: 100%;
+   margin: 40px 0px 0px 0px;
+   float:right;
+   border:1px solid #E1E1E1;
+}
+
+.content img {
+   margin: 50px 60px;   
+}
+   
+
+
+.frame {
+   float:right;
+   width: 70%;
+   margin: 30px -20px 50px 30px;
+   font-size: 13px;  
+   line-height: 1.6;
+}
+
+
+/*  FOOTER  */
+
+.footer {
+   position: relative;
+   overflow: hidden;
+   text-align: center;
+   background: #E1E1E1;
+   clear: both;
+   float: left;
+   width:100%; 
+   height: 40px; 
+   padding: 5px;
+   font-size: 12px; 
+}
+
+.footer .links a{
+   float:left;
+   color:#000;
+   text-decoration: none;
+   line-height: 20px;
+   letter-spacing: 0.2px;
+   text-shadow: 0.2px;
+   font-size: 15px;   
+}
+
+.footer .links li a:hover {
+   text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
